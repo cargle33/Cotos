@@ -1,0 +1,70 @@
+/*My Stylesheet for the project*/
+
+/*header*/
+header{
+  margin-bottom: 70px;
+  border-style: solid;
+  border-color: #1aff53; /*green*/
+  border-width: medium;
+}
+
+h1 {
+  color: orange; /*red #C80000*/
+  font-size: 400%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+
+  text-shadow: /*Outline effect*/
+  -1px -1px 10px black,
+  1px -1px 10px black,
+  -1px 1px 10px black,
+  1px 1px 10px black;
+}
+
+h2 {
+  color: #ffcc80; /*light orange*/
+  text-align: center;
+}
+
+/*body  #0d0d0d black*/
+body {
+  font-family: "Calibri", Georgia, Serif;
+  background:#1a75ff; /*blue*/
+  color: white;
+}
+
+
+/*Link to a new page*/
+a.a1 {
+  font-family: "Times New Roman";
+  color: #1aff53; /*green*/
+  text-decoration: none;
+}
+a.a1:hover {
+  color: #ffcc80; /*light orange*/
+}
+
+/*Test*/
+div {
+    width: 540px;
+    height: 540px;
+}
+
+div div {
+    width: 33%;
+    height: 33%;
+    outline: 1px solid;
+    float: left;
+
+}
+
+div.grid{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.s1{
+margin-left: auto;
+margin-right: auto;
+}
