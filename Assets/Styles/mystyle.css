@@ -1,11 +1,6 @@
-/*My Stylesheet for the project*/
-
-/*header*/
-header{
-  margin-bottom: 70px;
-  border-style: solid;
-  border-color: #1aff53; /*green*/
-  border-width: medium;
+/*My Stylesheet for the project.*/
+* {
+  box-sizing: border-box;
 }
 
 h1 {
@@ -25,6 +20,17 @@ h1 {
 h2 {
   color: #ffcc80; /*light orange*/
   text-align: center;
+
+  text-shadow: /*Outline effect*/
+  -1px -1px 10px black,
+  1px -1px 10px black,
+  -1px 1px 10px black,
+  1px 1px 10px black;
+}
+
+h2 .side {
+  color: blue
+  text-decoration-line:underline;
 }
 
 /*body  #0d0d0d black*/
@@ -34,37 +40,100 @@ body {
   color: white;
 }
 
+/* generic column styling */
+[class*="col-"] {
+  position: relative;
+  float:left;
+  /*padding:20px;*/
+  border: 1px solid #ccc;
+}
+
+/* siblings to preceding column - specify gutter*/
+[class*="col-"] + [class*="col-"] {
+  margin-bottom: 1.6%;
+  margin-left: 1%;
+/*  border: 1px solid #cd0603;*/
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-9 {
+  width: 74.6%;
+}
+
+.col-4 {
+  width: 32.26%;
+}
+
+.col-3 {
+  width: 23.8%;
+}
+
+.col-2 {
+  width: 15.33%;
+}
+
+.col-1 {
+  width: 6.86%;
+}
+.row {
+  padding: 5px;
+}
+
+.row:before, .row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+b.image {
+  cursor: pointer;
+}
+
 
 /*Link to a new page*/
 a.a1 {
   font-family: "Times New Roman";
-  color: #1aff53; /*green*/
+  color: #1aff53; green
+  text-align: center;
+
+  text-shadow: /*Outline effect*/
+  -1px -1px 10px black,
+  1px -1px 10px black,
+  -1px 1px 10px black,
+  1px 1px 10px black;
+
   text-decoration: none;
 }
-a.a1:hover {
-  color: #ffcc80; /*light orange*/
+a.a1 .tooltip{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+a.a1:hover{
+  color: 	#ffcc80; /*light orange*/
+
+  text-shadow: /*Outline effect*/
+  -1px -1px 10px #00ff00,
+  1px -1px 10px #00ff00,
+  -1px 1px 10px #00ff00,
+  1px 1px 10px #00ff00;
+}
+a.a1:hover tooltip{
+  visibility: visible;
 }
 
-/*Test*/
-div {
-    width: 540px;
-    height: 540px;
+p.p1 {
+  text-align:center;
 }
 
-div div {
-    width: 33%;
-    height: 33%;
-    outline: 1px solid;
-    float: left;
-
-}
-
-div.grid{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section.s1{
-margin-left: auto;
-margin-right: auto;
+figure.fig1{
+  text-align:center;
 }

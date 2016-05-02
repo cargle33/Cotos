@@ -1,26 +1,16 @@
-/* PLEASE IGNORE, USING AS TEST
+ PLEASE IGNORE, USING AS TEST
 
-function travelNotes() {
+function cats() {
     "use strict";
 
-  //handle user event for `add` button click
-  $(".note-input button").on("click", function(e) {
-    //object for wrapper html for note
-    //var $note = $("<p>");
-    //define input field
-    //var $note_text = $(".note-input input");
-    //conditional check for input field
-    //if ($note_text.val() !== "") {
-    //set content for note
-    //$note.html($note_text.val());
-    //append note text to note-output
-    //$(".note-output").html(console.log("hello world"));
-    //$note_text.val("");
-  }
-  });
 
+
+
+//handle user event for `add` button click
+$(".image").on("click", "b", function() {
+alert( "clicked" );
+console.log("just got clicked");
 };
 
-$(document).ready(travelNotes);
-
-*/
+};
+$(document).ready(cats);
